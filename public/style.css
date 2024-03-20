@@ -16,6 +16,10 @@ h1 {
     font-size: 30px;
     font-weight: 600;
 }
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
 h3 {
     font-size: 22px;
     font-weight: 400;
@@ -27,14 +31,18 @@ p {
     margin: 10px 0px;
 }
 .title-text {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 .subtitle-text {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 
 /* ----- Header & Navigation ----- */
+header {
+    position: sticky;
+    top: 0;
+}
 .phone-address-bar {
     background-color: var(--accent_blue);
     color: var(--primary_white);
@@ -72,3 +80,33 @@ a:active {
     border-bottom: 5px solid var(--accent_blue);
 }
 
+
+/* ----- Main Content ----- */
+main {
+    display: flex;
+    flex-direction: column;
+}
+.white-background-container {
+    background-color: var(--primary_white);
+}
+.blue-background-container {
+    background-color: var(--accent_blue);
+    color: var(--primary_white);
+}
+.main-content {
+    max-width: 960px;
+    margin: auto;
+    padding: 60px 40px;
+}
+.centered {
+    text-align: center;
+}
+.image-banner {
+    width: 100%;
+}
+.disclaimer {
+    padding: 10px;
+}
+.disclaimer > * {
+    margin: 0px;
+}
