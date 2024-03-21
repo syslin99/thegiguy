@@ -102,8 +102,7 @@ main {
 }
 .main-content {
     max-width: 960px;
-    margin-inline: auto;
-    margin: 40px 100px;
+    margin: 40px auto;
 }
 .centered {
     text-align: center;
