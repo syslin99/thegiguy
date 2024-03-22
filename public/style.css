@@ -121,7 +121,7 @@ main {
     width: 100%;
 }
 .main-content {
-    max-width: 960px;
+    max-width: min(960px, calc(100% - 120px));
     margin: 40px auto;
 }
 .centered {
