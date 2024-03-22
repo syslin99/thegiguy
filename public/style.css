@@ -40,6 +40,26 @@ p {
     font-weight: 600;
     color: var(--accent_blue);
 }
+.contact-cta > h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+/* ----- Buttons ----- */
+button {
+    background-color: var(--accent_blue);
+    color: var(--primary_white);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--secondary_blue);
+    border: 2px solid var(--accent_blue);
+    color: var(--accent_blue);
+}
 
 
 /* ----- Header & Navigation ----- */
@@ -67,16 +87,16 @@ nav {
     align-items: center;
     font-size: 22px;
 }
-a {
+nav > a {
     color: var(--text_black);
     text-decoration: none;
     padding: 10px 20px;
     border-bottom: 5px solid var(--primary_white);
 }
-a:hover {
+nav > a:hover {
     background-color: var(--secondary_blue);
 }
-a:active {
+nav > a:active {
     background-color: var(--accent_blue);
     color: var(--primary_white);
 }
@@ -125,4 +145,7 @@ main {
     border-radius: 20px;
     padding: 10px 30px;
     margin: 30px 0px;
+}
+.contact-cta {
+    margin-bottom: 70px;
 }
