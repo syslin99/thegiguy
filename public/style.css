@@ -32,6 +32,7 @@ p {
 }
 .title-text {
     margin-bottom: 0px;
+    font-weight: 600;
 }
 .subtitle-text {
     margin-top: 0px;
@@ -120,6 +121,9 @@ main {
     color: var(--primary_white);
     width: 100%;
 }
+.background-margin {
+    margin: 60px 10px;
+}
 .main-content {
     max-width: min(960px, calc(100% - 120px));
     margin: 40px auto;
@@ -148,4 +152,35 @@ main {
 }
 .contact-cta {
     margin-bottom: 70px;
+}
+/* ----- About Page ----- */
+.dr-lin-about {
+    display: flex;
+    gap: 60px;
+    align-items: start;
+}
+.dr-lin-profile {
+    margin-top: 18px;
+}
+.timeline {
+    width: 100%;
+    margin-top: 40px;
+}
+.staff-about {
+    display: flex;
+    align-items: center;
+}
+.staff-item {
+    flex: 50%;
+    border-right: 2px solid var(--text_black);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 30px 30px;
+}
+.staff-item:last-child {
+    border: none;
+}
+.staff-profile {
+    width: 50%;
 }
