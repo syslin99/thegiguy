@@ -167,21 +167,3 @@ main {
     width: 100%;
     margin-top: 40px;
 }
-.staff-about {
-    display: flex;
-    align-items: center;
-}
-.staff-item {
-    flex: 50%;
-    border-right: 2px solid var(--text_black);
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    padding: 30px 30px;
-}
-.staff-item:last-child {
-    border: none;
-}
-.staff-profile {
-    width: 50%;
-}
