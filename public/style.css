@@ -220,3 +220,10 @@ main {
     border: 2px solid var(--accent_blue);
     padding: 40px;
 }
+.procedure-info > div {
+    display: flex;
+    gap: 20px;
+}
+.procedure-picture {
+    width: 300px;
+}
