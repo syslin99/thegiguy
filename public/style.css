@@ -41,7 +41,7 @@ p {
     font-weight: 600;
     color: var(--accent_blue);
 }
-.contact-cta > h2 {
+.contact-cta h2 {
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -88,16 +88,16 @@ nav {
     align-items: center;
     font-size: 22px;
 }
-nav > a {
+nav a {
     color: var(--text_black);
     text-decoration: none;
     padding: 10px 20px;
     border-bottom: 5px solid var(--primary_white);
 }
-nav > a:hover {
+nav a:hover {
     background-color: var(--secondary_blue);
 }
-nav > a:active {
+nav a:active {
     background-color: var(--accent_blue);
     color: var(--primary_white);
 }
@@ -138,7 +138,7 @@ main {
 .disclaimer {
     padding: 10px;
 }
-.disclaimer > * {
+.disclaimer * {
     margin: 0px;
 }
 /* ----- FAQ Page ----- */
@@ -166,4 +166,57 @@ main {
 .timeline {
     width: 100%;
     margin-top: 40px;
+}
+/* ----- Procedure Pages ----- */
+.procedure {
+    display: flex;
+}
+.procedure-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+.procedure-list li {
+    background-color: var(--primary_white);
+    padding: 15px 40px 15px 20px;
+    border-radius: 20px 0 0 20px;
+}
+.procedure-list a {
+    color: var(--text_black);
+    text-decoration: none;
+    font-size: 22px;
+}
+.procedure-list li.current-procedure {
+    background-color: var(--accent_blue);
+    position: relative;
+    z-index: -1;    /* hide under header */
+}
+.procedure-list li.current-procedure > a {
+    color: var(--primary_white);
+}
+.procedure-list li.current-procedure::before,
+.procedure-list li.current-procedure::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    right: 0;
+}
+.procedure-list li.current-procedure::before {
+    top: -10px;
+    border-radius: 0 0 100% 0;
+    box-shadow: 5px 5px 0px 5px var(--accent_blue);
+}
+.procedure-list li.current-procedure::after {
+    bottom: -10px;
+    border-radius: 0 100% 0 0;
+    box-shadow: 5px -5px 0px 5px var(--accent_blue);
+}
+.procedure-info {
+    background-color: var(--primary_white);
+    border-radius: 20px;
+    border: 2px solid var(--accent_blue);
+    padding: 40px;
 }
