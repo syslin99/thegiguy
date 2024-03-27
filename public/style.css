@@ -227,3 +227,9 @@ main {
 .procedure-picture {
     width: 300px;
 }
+.procedure-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+}
