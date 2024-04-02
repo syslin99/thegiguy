@@ -233,3 +233,53 @@ main {
     gap: 10px;
     margin: 20px 0px;
 }
+/* ----- Forms Page ----- */
+.accordion {
+    background-color: var(--primary_white);
+    width: 100%;
+    border: 2px solid var(--text_black);
+    border-radius: 20px;
+}
+.accordion-item {
+    border-bottom: 2px solid var(--text_black);
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-input {
+    display: none;
+}
+.accordion-label {
+    display: block;
+    padding: 20px 30px;
+    font-size: 22px;
+    position: relative;
+}
+.accordion-label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 12px;
+    height: 6px;
+    background-image: url(images/arrow_dropdown.svg);
+    background-size: contain;
+    transition: transform 0.4s;
+}
+.accordion-content {
+    padding: 0px 40px 20px;
+    display: none;
+}
+.accordion-content a {
+    color: var(--text_black);
+    text-decoration: none;
+    padding: 5px 0px;
+}
+.accordion-input:checked ~ .accordion-content {
+    display: flex;
+    flex-direction: column;
+}
+.accordion-input:checked ~ .accordion-label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}

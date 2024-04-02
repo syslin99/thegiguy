@@ -1,2 +1,65 @@
-This is the Forms page.
-<a href='../index.html'>Back to Home</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Dr. Terry C. Lin D.O.</title>
+    <link rel='stylesheet' type='text/css' href='../public/style.css'>
+    <script src="https://kit.fontawesome.com/ca496ad391.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class='phone-address-bar'>
+            <p class='header-text'>
+                <i class="fas fa-phone-alt"></i>
+                (408) 358-6580
+            </p>
+            <p class='header-text'>
+                <i class="fas fa-map-marker-alt"></i>
+                2516 Samaritan Dr., Ste. M, San Jose, CA 95124
+            </p>
+        </div>
+        <div class='title-navigation-bar'>
+            <div>
+                <h1 class='title-text'>Dr. Terry C. Lin D.O.</h1>
+                <h3 class='subtitle-text'>Gastroenterology / Hepatology</h3>
+            </div>
+            <nav>
+                <a href='../index.html'>Home</a>
+                <a href='colonoscopy.html'>Procedures</a>
+                <a href='forms.html' class='current-page'>Forms</a>
+                <a href='faq.html'>FAQ</a>
+                <a href='about.html'>About</a>
+                <a href='contact.html'>Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class='main-content accordion'>
+            <div class='accordion-item'>
+                <input type='checkbox' name='forms-accordion' id='new-patient-forms' class='accordion-input'>
+                <label for='new-patient-forms' class='accordion-label'>New Patient Forms</label>
+                <div class='accordion-content'>
+                    <a><i class="far fa-file-pdf"></i> New Patient Information</a>
+                </div>
+            </div>
+            <div class='accordion-item'>
+                <input type='checkbox' name='forms-accordion' id='procedure-forms' class='accordion-input'>
+                <label for='procedure-forms' class='accordion-label'>Procedure Forms</label>
+                <div class='accordion-content'>
+                    <a href='../public/forms/colonoscopy_suprep.pdf' download><i class="far fa-file-pdf"></i> Colonoscopy Suprep</a>
+                    <a href='../public/forms/colonoscopy_consent.pdf' download><i class="far fa-file-pdf"></i> Colonoscopy Consent</a>
+                    <a href='../public/forms/egd_instructions.pdf' download><i class="far fa-file-pdf"></i> EGD Instructions</a>
+                    <a href='../public/forms/egd_consent.pdf' download><i class="far fa-file-pdf"></i> EGD Consent</a>
+                </div>
+            </div>
+            <div class='accordion-item'>
+                <input type='checkbox' name='forms-accordion' id='other-forms' class='accordion-input'>
+                <label for='other-forms' class='accordion-label'>Other Forms</label>
+                <div class='accordion-content'>
+                    <a href='../public/forms/patient_survey.pdf' download><i class="far fa-file-pdf"></i> Patient Survey</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
