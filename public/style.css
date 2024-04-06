@@ -283,3 +283,27 @@ main {
 .accordion-input:checked ~ .accordion-label::after {
     transform: translateY(-50%) rotate(0.5turn);
 }
+/* ----- Contact Page ----- */
+.contact {
+    background-color: var(--primary_white);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.contact-info {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.contact-info * {
+    margin: 0px;
+}
+.contact-item {
+    display: flex;
+}
+.map-embed {
+    flex: 40%;
+    border: none;
+}
