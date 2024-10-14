@@ -180,13 +180,14 @@ main {
 }
 .procedure-list li {
     background-color: var(--primary_white);
-    padding: 15px 40px 15px 20px;
     border-radius: 20px 0 0 20px;
 }
 .procedure-list a {
     color: var(--text_black);
     text-decoration: none;
     font-size: 22px;
+    display: block;
+    padding: 15px 40px 15px 20px;
 }
 .procedure-list li.current-procedure {
     background-color: var(--accent_blue);
